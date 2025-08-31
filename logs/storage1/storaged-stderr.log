@@ -1,0 +1,161 @@
+I20250830 20:16:29.410271     1 StorageDaemon.cpp:132] localhost = "storaged1":9779
+I20250830 20:16:29.421339     1 StorageDaemon.cpp:147] data path= /data/storage
+I20250830 20:16:29.427561     1 MetaClient.cpp:80] Create meta client to "metad1":9559
+I20250830 20:16:29.427776     1 MetaClient.cpp:81] root path: /usr/local/nebula, data path size: 1
+W20250830 20:16:29.427965     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:16:29.430428    47 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "172.19.0.2":9559
+I20250830 20:16:30.436710    47 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "172.19.0.2":9559
+I20250830 20:16:31.440773    47 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.3":9559
+I20250830 20:16:32.443822    47 ThriftClientManager-inl.h:67] resolve "metad1":9559 as "172.19.0.4":9559
+E20250830 20:16:32.444490    47 MetaClient.cpp:772] Send request to "metad1":9559, exceed retry limit
+E20250830 20:16:32.446312    47 MetaClient.cpp:773] RpcResponse exception: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connection refused): Connection refused
+E20250830 20:16:32.446933     1 MetaClient.cpp:112] Heartbeat failed, status:RPC failure in MetaClient: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connect
+I20250830 20:16:32.447299     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:16:42.448679     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:16:42.451541    53 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "172.19.0.2":9559
+I20250830 20:16:43.457724    53 ThriftClientManager-inl.h:67] resolve "metad1":9559 as "172.19.0.4":9559
+I20250830 20:16:44.461746    53 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "172.19.0.2":9559
+I20250830 20:16:45.466333    53 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "172.19.0.2":9559
+E20250830 20:16:45.467483    53 MetaClient.cpp:772] Send request to "metad0":9559, exceed retry limit
+E20250830 20:16:45.468446    53 MetaClient.cpp:773] RpcResponse exception: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connection refused): Connection refused
+E20250830 20:16:45.469230     1 MetaClient.cpp:112] Heartbeat failed, status:RPC failure in MetaClient: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connect
+I20250830 20:16:45.469667     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:16:55.470700     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:16:55.473057    54 ThriftClientManager-inl.h:67] resolve "metad1":9559 as "172.19.0.4":9559
+I20250830 20:16:56.481036    54 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.3":9559
+E20250830 20:16:58.494194     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:16:58.495716     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:17:08.497188     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:17:08.501187    55 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.3":9559
+E20250830 20:17:11.529670     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:17:11.531425     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:17:21.531810     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:17:21.533840    63 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.3":9559
+E20250830 20:17:24.547942     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:17:24.548687     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:17:34.550249     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:17:34.552673    64 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.3":9559
+E20250830 20:17:37.567418     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:17:37.568265     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:17:47.570060     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:17:47.572566    65 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.3":9559
+E20250830 20:17:50.586064     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:17:50.586728     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:18:00.588012     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:18:00.590723    73 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.3":9559
+E20250830 20:18:03.604002     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:18:03.604856     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:18:13.605270     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:18:13.608824    74 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.3":9559
+E20250830 20:18:16.622004     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:18:16.623240     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:18:26.624634     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:18:26.627131    75 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.3":9559
+E20250830 20:18:29.638332     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:18:29.638844     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:18:39.639279     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:18:39.642886    76 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.3":9559
+E20250830 20:18:42.656800     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:18:42.657810     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:18:52.659482     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:18:52.662912    77 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.3":9559
+E20250830 20:18:55.678187     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:18:55.679033     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:19:05.679970     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:19:05.682305    78 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.3":9559
+E20250830 20:19:08.696012     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:19:08.697707     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:19:18.699542     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:19:18.701573    79 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.3":9559
+E20250830 20:19:21.714758     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:19:21.715457     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:19:31.717325     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:19:31.721215    80 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.3":9559
+I20250830 20:19:32.892012     1 StorageDaemon.cpp:201] Signal 15(Terminated) received, stopping this server
+E20250830 20:19:34.744413     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+E20250830 20:19:34.745324     1 MetaClient.cpp:143] Connect to the MetaServer Failed
+E20250830 20:19:34.745777     1 StorageServer.cpp:237] waitForMetadReady error!
+E20250830 20:19:34.746285     1 StorageDaemon.cpp:180] Storage server start failed
+I20250830 20:19:48.427696     1 StorageDaemon.cpp:132] localhost = "storaged1":9779
+I20250830 20:19:48.429452     1 StorageDaemon.cpp:147] data path= /data/storage
+I20250830 20:19:48.436555     1 MetaClient.cpp:80] Create meta client to "metad1":9559
+I20250830 20:19:48.437247     1 MetaClient.cpp:81] root path: /usr/local/nebula, data path size: 1
+W20250830 20:19:48.437597     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:19:53.447145    47 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "172.19.0.4":9559
+I20250830 20:19:54.455062    47 ThriftClientManager-inl.h:67] resolve "metad1":9559 as "172.19.0.3":9559
+I20250830 20:19:55.459849    47 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.2":9559
+I20250830 20:19:56.467468    47 ThriftClientManager-inl.h:67] resolve "metad1":9559 as "172.19.0.3":9559
+E20250830 20:19:56.468101    47 MetaClient.cpp:772] Send request to "metad1":9559, exceed retry limit
+E20250830 20:19:56.469949    47 MetaClient.cpp:773] RpcResponse exception: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connection refused): Connection refused
+E20250830 20:19:56.470557     1 MetaClient.cpp:112] Heartbeat failed, status:RPC failure in MetaClient: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connect
+I20250830 20:19:56.471033     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:20:06.472071     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:20:06.478258    60 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "172.19.0.4":9559
+I20250830 20:20:07.482440    60 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.2":9559
+E20250830 20:20:09.497242     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:20:09.498947     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:20:19.499347     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:20:19.501487    61 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.2":9559
+I20250830 20:20:19.504354    61 MetaClient.cpp:2672] Persist the cluster Id from metad 7502111225327318900
+I20250830 20:20:19.504570    61 FileBasedClusterIdMan.cpp:21] Remove the existed file cluster.id
+I20250830 20:20:19.505062    61 FileBasedClusterIdMan.cpp:34] Persist clusterId 7502111225327318900 succeeded!
+I20250830 20:20:19.506457    62 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.2":9559
+I20250830 20:20:19.509158    77 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.2":9559
+I20250830 20:20:24.514101    78 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.2":9559
+I20250830 20:20:24.531694    79 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.2":9559
+I20250830 20:20:24.534984    80 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.2":9559
+I20250830 20:20:29.542886    81 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.2":9559
+I20250830 20:20:29.547201    82 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.2":9559
+I20250830 20:20:29.548640     1 MetaClient.cpp:3263] Load leader of "storaged0":9779 in 0 space
+I20250830 20:20:29.549124     1 MetaClient.cpp:3263] Load leader of "storaged1":9779 in 0 space
+I20250830 20:20:29.549376     1 MetaClient.cpp:3263] Load leader of "storaged2":9779 in 0 space
+I20250830 20:20:29.549616     1 MetaClient.cpp:3269] Load leader ok
+I20250830 20:20:34.552831    83 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.2":9559
+I20250830 20:20:39.562929    84 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.2":9559
+I20250830 20:20:39.569234     1 MetaClient.cpp:162] Register time task for heartbeat!
+I20250830 20:20:39.569876     1 StorageServer.cpp:250] Init schema manager
+I20250830 20:20:39.570238     1 StorageServer.cpp:253] Init index manager
+I20250830 20:20:39.570552     1 StorageServer.cpp:256] Init kvstore
+I20250830 20:20:39.570899     1 NebulaStore.cpp:48] Start the raft service...
+I20250830 20:20:39.571995     1 NebulaSnapshotManager.cpp:25] Send snapshot is rate limited to 10485760 for each part by default
+I20250830 20:20:39.586947     1 RaftexService.cpp:46] Start raft service on 9780
+I20250830 20:20:39.587733     1 NebulaStore.cpp:82] Scan the local path, and init the spaces_
+E20250830 20:20:39.588287     1 FileUtils.cpp:377] Failed to read the directory "/data/storage/nebula" (2): No such file or directory
+I20250830 20:20:39.589437     1 NebulaStore.cpp:292] Init data from partManager for "storaged1":9779
+I20250830 20:20:39.589776     1 NebulaStore.cpp:75] Register handler...
+I20250830 20:20:39.590010     1 StorageServer.cpp:259] Init LogMonitor
+I20250830 20:20:39.590415     1 StorageServer.cpp:126] Starting Storage HTTP Service
+I20250830 20:20:39.591199     1 StorageServer.cpp:130] Http Thread Pool started
+I20250830 20:20:39.595173   107 WebService.cpp:124] Web service started on HTTP[19779]
+I20250830 20:20:39.597654     1 RocksEngineConfig.cpp:371] Emplace rocksdb option max_bytes_for_level_base=268435456
+I20250830 20:20:39.597901     1 RocksEngineConfig.cpp:371] Emplace rocksdb option max_write_buffer_number=4
+I20250830 20:20:39.598136     1 RocksEngineConfig.cpp:371] Emplace rocksdb option write_buffer_size=67108864
+I20250830 20:20:39.598619     1 RocksEngineConfig.cpp:371] Emplace rocksdb option block_size=8192
+I20250830 20:20:39.620771     1 RocksEngine.cpp:107] open rocksdb on /data/storage/nebula/0/data
+I20250830 20:20:39.622188     1 AdminTaskManager.cpp:22] max concurrent subtasks: 10
+I20250830 20:20:39.622499   131 AdminTaskManager.cpp:224] waiting for incoming task
+I20250830 20:20:39.622548     1 AdminTaskManager.cpp:40] exit AdminTaskManager::init()
+E20250830 20:20:39.642882     1 MemoryUtils.cpp:167] Total memory less than untracked 50 Mib, MemoryTracker limit is not set properly,  Current memory stats:MemoryStats: 8589934592.000GiB/126.999MiB
+I20250830 20:20:39.643173     1 MemoryUtils.cpp:171] MemoryTracker set static ratio: 0.8
+I20250830 20:20:50.154199    85 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.2":9559
+I20250830 20:21:00.171108    86 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.2":9559
+I20250830 20:21:10.184546    87 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.2":9559
+I20250830 20:21:20.197371    88 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.2":9559
+I20250830 20:21:30.208333    47 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.2":9559
+I20250830 20:23:49.160702     1 StorageDaemon.cpp:201] Signal 15(Terminated) received, stopping this server
+I20250830 20:23:49.165314     1 NebulaStore.cpp:343] Stop the raft service...
+I20250830 20:23:49.165434     1 RaftexService.cpp:67] Stopping the raftex service on port 9780
+I20250830 20:23:49.165567     1 RaftexService.cpp:77] All partitions have stopped
+I20250830 20:23:49.165719     1 NebulaStore.cpp:346] Stop kv engine...
+I20250830 20:23:49.180524     1 AdminTaskManager.cpp:176] enter AdminTaskManager::shutdown()
+I20250830 20:23:49.180660   132 AdminTaskManager.cpp:146] Unreported-Admin-Thread stopped
+I20250830 20:23:49.192567   131 AdminTaskManager.cpp:231] detect AdminTaskManager::shutdown()
+I20250830 20:23:49.192842     1 RocksEngine.h:247] Release rocksdb on /data/storage/nebula/0
+I20250830 20:23:49.195245     1 AdminTaskManager.cpp:193] exit AdminTaskManager::shutdown()
+I20250830 20:23:49.195389     1 NebulaStore.cpp:343] Stop the raft service...
+I20250830 20:23:49.195523     1 RaftexService.cpp:67] Stopping the raftex service on port 9780
+I20250830 20:23:49.195699     1 RaftexService.cpp:77] All partitions have stopped
+I20250830 20:23:49.195838     1 NebulaStore.cpp:346] Stop kv engine...
+I20250830 20:23:49.195942     1 NebulaStore.cpp:36] Cut off the relationship with meta client
+I20250830 20:23:49.196904     1 NebulaStore.cpp:44] ~NebulaStore()
+I20250830 20:23:49.197042     1 StorageDaemon.cpp:186] The storage Daemon stopped

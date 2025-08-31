@@ -1,0 +1,78 @@
+Log file created at: 2025/08/30 20:16:29
+Running on machine: 118b78937d3d
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20250830 20:16:29.309474     1 StorageDaemon.cpp:132] localhost = "storaged0":9779
+I20250830 20:16:29.310314     1 StorageDaemon.cpp:147] data path= /data/storage
+I20250830 20:16:29.348294     1 MetaClient.cpp:80] Create meta client to "metad1":9559
+I20250830 20:16:29.353389     1 MetaClient.cpp:81] root path: /usr/local/nebula, data path size: 1
+W20250830 20:16:29.353991     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:16:29.367616    46 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "172.19.0.2":9559
+I20250830 20:16:30.371598    46 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "172.19.0.2":9559
+I20250830 20:16:31.375820    46 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "172.19.0.2":9559
+I20250830 20:16:32.379132    46 ThriftClientManager-inl.h:67] resolve "metad1":9559 as "172.19.0.4":9559
+E20250830 20:16:32.379706    46 MetaClient.cpp:772] Send request to "metad1":9559, exceed retry limit
+E20250830 20:16:32.381528    46 MetaClient.cpp:773] RpcResponse exception: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connection refused): Connection refused
+E20250830 20:16:32.382702     1 MetaClient.cpp:112] Heartbeat failed, status:RPC failure in MetaClient: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connect
+I20250830 20:16:32.383280     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:16:42.384581     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:16:47.393613    52 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "172.19.0.2":9559
+I20250830 20:16:48.413251    52 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "172.19.0.2":9559
+I20250830 20:16:49.421900    52 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.3":9559
+E20250830 20:16:54.679556     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:16:54.680146     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:17:04.680689     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:17:04.685698    53 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.3":9559
+E20250830 20:17:07.703927     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:17:07.704959     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:17:17.705893     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:17:17.709477    54 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.3":9559
+E20250830 20:17:20.739022     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:17:20.740187     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:17:30.741533     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:17:30.744940    62 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.3":9559
+E20250830 20:17:33.761987     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:17:33.763212     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:17:43.765836     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:17:43.768414    70 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.3":9559
+E20250830 20:17:46.785792     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:17:46.787592     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:17:56.788937     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:17:56.792950    71 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.3":9559
+E20250830 20:17:59.811117     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:17:59.812892     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:18:09.814229     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:18:09.817871    72 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.3":9559
+E20250830 20:18:12.833127     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:18:12.834859     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:18:22.835647     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:18:22.839439    73 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.3":9559
+E20250830 20:18:25.855070     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:18:25.856292     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:18:35.857372     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:18:35.859997    74 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.3":9559
+E20250830 20:18:38.874027     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:18:38.876120     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:18:48.877429     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:18:48.880331    75 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.3":9559
+E20250830 20:18:51.896034     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:18:51.897728     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:19:01.899549     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:19:01.902582    76 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.3":9559
+E20250830 20:19:04.916821     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:19:04.917608     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:19:14.919749     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:19:14.923763    77 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.3":9559
+E20250830 20:19:17.940068     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:19:17.941852     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:19:27.943477     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:19:27.947454    78 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.3":9559
+E20250830 20:19:30.963182     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:19:30.964567     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+I20250830 20:19:32.892222     1 StorageDaemon.cpp:201] Signal 15(Terminated) received, stopping this server
+W20250830 20:19:32.893474     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:19:37.901818    79 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.3":9559
+E20250830 20:19:40.922101     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+E20250830 20:19:40.924000     1 MetaClient.cpp:143] Connect to the MetaServer Failed
+E20250830 20:19:40.924533     1 StorageServer.cpp:237] waitForMetadReady error!
+E20250830 20:19:40.925331     1 StorageDaemon.cpp:180] Storage server start failed

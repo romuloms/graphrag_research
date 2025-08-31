@@ -1,0 +1,45 @@
+Log file created at: 2025/08/30 20:16:29
+Running on machine: 8660b0bea137
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20250830 20:16:29.582154     1 GraphDaemon.cpp:122] Starting Graph HTTP Service
+I20250830 20:16:29.589859     7 WebService.cpp:124] Web service started on HTTP[19669]
+I20250830 20:16:29.590181     1 GraphDaemon.cpp:136] Number of networking IO threads: 8
+I20250830 20:16:29.590389     1 GraphDaemon.cpp:145] Number of worker threads: 8
+I20250830 20:16:29.593135     1 MetaClient.cpp:80] Create meta client to "metad0":9559
+I20250830 20:16:29.593560     1 MetaClient.cpp:81] root path: /usr/local/nebula, data path size: 0
+I20250830 20:16:29.595677    34 ThriftClientManager-inl.h:67] resolve "metad1":9559 as "172.19.0.4":9559
+I20250830 20:16:30.601420    34 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.3":9559
+I20250830 20:16:31.609984    34 ThriftClientManager-inl.h:67] resolve "metad1":9559 as "172.19.0.4":9559
+I20250830 20:16:32.615981    34 ThriftClientManager-inl.h:67] resolve "metad1":9559 as "172.19.0.4":9559
+E20250830 20:16:32.616803    34 MetaClient.cpp:772] Send request to "metad1":9559, exceed retry limit
+E20250830 20:16:32.620045    34 MetaClient.cpp:773] RpcResponse exception: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connection refused): Connection refused
+E20250830 20:16:32.620587     1 MetaClient.cpp:112] Heartbeat failed, status:RPC failure in MetaClient: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connect
+I20250830 20:16:32.620901     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+I20250830 20:16:42.628394    35 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "172.19.0.2":9559
+I20250830 20:16:43.637344    35 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "172.19.0.2":9559
+I20250830 20:16:44.661177    35 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "172.19.0.2":9559
+I20250830 20:16:45.666651    35 ThriftClientManager-inl.h:67] resolve "metad1":9559 as "172.19.0.4":9559
+E20250830 20:16:45.667497    35 MetaClient.cpp:772] Send request to "metad1":9559, exceed retry limit
+E20250830 20:16:45.668090    35 MetaClient.cpp:773] RpcResponse exception: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connection refused): Connection refused
+E20250830 20:16:45.668534     1 MetaClient.cpp:112] Heartbeat failed, status:RPC failure in MetaClient: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connect
+I20250830 20:16:45.668892     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+I20250830 20:16:55.674530    36 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.3":9559
+I20250830 20:16:55.679976    37 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.3":9559
+I20250830 20:17:00.690837    45 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.3":9559
+I20250830 20:17:00.694242    46 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.3":9559
+I20250830 20:17:05.703284    47 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.3":9559
+I20250830 20:17:05.706820    48 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.3":9559
+I20250830 20:17:05.709640    34 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.3":9559
+I20250830 20:17:05.711251    35 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "172.19.0.3":9559
+I20250830 20:17:05.712381     1 MetaClient.cpp:3269] Load leader ok
+I20250830 20:17:05.715627     1 MetaClient.cpp:162] Register time task for heartbeat!
+I20250830 20:17:05.716979     1 GraphSessionManager.cpp:337] Total of 0 sessions are loaded
+E20250830 20:17:05.717551     1 MemoryUtils.cpp:167] Total memory less than untracked 50 Mib, MemoryTracker limit is not set properly,  Current memory stats:MemoryStats: 8589934592.000GiB/39.000MiB
+I20250830 20:17:05.718657     1 MemoryUtils.cpp:171] MemoryTracker set static ratio: 0.8
+I20250830 20:17:05.721834     1 Snowflake.cpp:17] WorkerId init success: 1
+I20250830 20:17:05.722265    52 GraphServer.cpp:63] Starting nebula-graphd on graphd2:9669
+I20250830 20:19:32.456851     1 GraphDaemon.cpp:176] Signal 15(Terminated) received, stopping this server
+I20250830 20:19:32.466478    52 GraphServer.cpp:74] nebula-graphd on graphd2:9669 has been stopped
+I20250830 20:19:32.467270     1 GraphDaemon.cpp:161] The graph Daemon stopped
+I20250830 20:19:32.470189     1 GraphServer.cpp:109] The graph server has been stopped

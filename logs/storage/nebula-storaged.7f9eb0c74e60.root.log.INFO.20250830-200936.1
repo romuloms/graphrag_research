@@ -1,0 +1,40 @@
+Log file created at: 2025/08/30 20:09:36
+Running on machine: 7f9eb0c74e60
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20250830 20:09:36.188301     1 StorageDaemon.cpp:132] localhost = "storaged":9779
+I20250830 20:09:36.189455     1 StorageDaemon.cpp:147] data path= /data/storage
+I20250830 20:09:36.199625     1 MetaClient.cpp:80] Create meta client to "metad":9559
+I20250830 20:09:36.199848     1 MetaClient.cpp:81] root path: /usr/local/nebula, data path size: 1
+W20250830 20:09:36.200150     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:09:36.205768    47 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+I20250830 20:09:37.212757    47 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+I20250830 20:09:38.216385    47 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+I20250830 20:09:39.220155    47 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:09:39.220950    47 MetaClient.cpp:772] Send request to "metad":9559, exceed retry limit
+E20250830 20:09:39.223011    47 MetaClient.cpp:773] RpcResponse exception: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connection refused): Connection refused
+E20250830 20:09:39.223516     1 MetaClient.cpp:112] Heartbeat failed, status:RPC failure in MetaClient: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connect
+I20250830 20:09:39.224145     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:09:49.223832     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:09:49.228516    53 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:09:52.251650     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:09:52.252403     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:10:02.252911     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:10:02.258056    54 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:10:05.291694     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:10:05.292944     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:10:15.294020     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:10:15.298431    55 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:10:18.332465     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:10:18.333521     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:10:28.335865     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:10:28.339033    56 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:10:31.353595     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:10:31.355376     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+I20250830 20:10:37.842809     1 StorageDaemon.cpp:201] Signal 15(Terminated) received, stopping this server
+W20250830 20:10:37.843266     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:10:37.844496    57 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:10:40.861934     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+E20250830 20:10:40.862713     1 MetaClient.cpp:143] Connect to the MetaServer Failed
+E20250830 20:10:40.863287     1 StorageServer.cpp:237] waitForMetadReady error!
+E20250830 20:10:40.863991     1 StorageDaemon.cpp:180] Storage server start failed

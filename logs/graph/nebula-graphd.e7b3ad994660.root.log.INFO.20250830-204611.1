@@ -1,0 +1,30 @@
+Log file created at: 2025/08/30 20:46:11
+Running on machine: e7b3ad994660
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20250830 20:46:11.341532     1 GraphDaemon.cpp:122] Starting Graph HTTP Service
+I20250830 20:46:16.355950    13 WebService.cpp:124] Web service started on HTTP[19669]
+I20250830 20:46:16.356516     1 GraphDaemon.cpp:136] Number of networking IO threads: 8
+I20250830 20:46:16.356742     1 GraphDaemon.cpp:145] Number of worker threads: 8
+I20250830 20:46:16.365288     1 MetaClient.cpp:80] Create meta client to "metad":9559
+I20250830 20:46:16.365547     1 MetaClient.cpp:81] root path: /usr/local/nebula, data path size: 0
+I20250830 20:46:16.373334    40 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+I20250830 20:46:16.378208    41 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+I20250830 20:46:21.384245    42 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+I20250830 20:46:21.386598    43 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+I20250830 20:46:21.388201    44 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+I20250830 20:46:21.413682    45 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+I20250830 20:46:21.417023    46 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+I20250830 20:46:21.418866    47 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+I20250830 20:46:21.420651     1 MetaClient.cpp:3269] Load leader ok
+I20250830 20:46:21.422964     1 MetaClient.cpp:162] Register time task for heartbeat!
+I20250830 20:46:21.424377     1 GraphSessionManager.cpp:337] Total of 0 sessions are loaded
+E20250830 20:46:21.424981     1 MemoryUtils.cpp:167] Total memory less than untracked 50 Mib, MemoryTracker limit is not set properly,  Current memory stats:MemoryStats: 8589934592.000GiB/39.000MiB
+I20250830 20:46:21.429018     1 MemoryUtils.cpp:171] MemoryTracker set static ratio: 0.8
+I20250830 20:46:21.429816     1 Snowflake.cpp:17] WorkerId init success: 1
+I20250830 20:46:21.430383    51 GraphServer.cpp:63] Starting nebula-graphd on graphd:19669
+E20250830 20:46:21.431951    51 ThriftServer.cpp:547] Got an exception while setting up the server: failed to bind to async server socket: 0.0.0.0:19669: Address already in use
+E20250830 20:46:21.432386    51 GraphServer.cpp:67] Exception thrown while starting the graph RPC server: failed to bind to async server socket: 0.0.0.0:19669: Address already in use
+I20250830 20:46:21.432768    51 GraphServer.cpp:74] nebula-graphd on graphd:19669 has been stopped
+E20250830 20:46:21.434259     1 GraphDaemon.cpp:156] The graph server start failed
+I20250830 20:46:21.434614     1 GraphServer.cpp:109] The graph server has been stopped

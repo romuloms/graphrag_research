@@ -1,0 +1,499 @@
+I20250830 20:09:36.188301     1 StorageDaemon.cpp:132] localhost = "storaged":9779
+I20250830 20:09:36.189455     1 StorageDaemon.cpp:147] data path= /data/storage
+I20250830 20:09:36.199625     1 MetaClient.cpp:80] Create meta client to "metad":9559
+I20250830 20:09:36.199848     1 MetaClient.cpp:81] root path: /usr/local/nebula, data path size: 1
+W20250830 20:09:36.200150     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:09:36.205768    47 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+I20250830 20:09:37.212757    47 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+I20250830 20:09:38.216385    47 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+I20250830 20:09:39.220155    47 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:09:39.220950    47 MetaClient.cpp:772] Send request to "metad":9559, exceed retry limit
+E20250830 20:09:39.223011    47 MetaClient.cpp:773] RpcResponse exception: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connection refused): Connection refused
+E20250830 20:09:39.223516     1 MetaClient.cpp:112] Heartbeat failed, status:RPC failure in MetaClient: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connect
+I20250830 20:09:39.224145     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:09:49.223832     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:09:49.228516    53 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:09:52.251650     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:09:52.252403     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:10:02.252911     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:10:02.258056    54 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:10:05.291694     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:10:05.292944     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:10:15.294020     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:10:15.298431    55 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:10:18.332465     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:10:18.333521     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:10:28.335865     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:10:28.339033    56 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:10:31.353595     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:10:31.355376     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+I20250830 20:10:37.842809     1 StorageDaemon.cpp:201] Signal 15(Terminated) received, stopping this server
+W20250830 20:10:37.843266     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:10:37.844496    57 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:10:40.861934     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+E20250830 20:10:40.862713     1 MetaClient.cpp:143] Connect to the MetaServer Failed
+E20250830 20:10:40.863287     1 StorageServer.cpp:237] waitForMetadReady error!
+E20250830 20:10:40.863991     1 StorageDaemon.cpp:180] Storage server start failed
+I20250830 20:11:00.082366     1 StorageDaemon.cpp:132] localhost = "storaged":9779
+I20250830 20:11:00.084030     1 StorageDaemon.cpp:147] data path= /data/storage
+I20250830 20:11:00.093254     1 MetaClient.cpp:80] Create meta client to "metad":9559
+I20250830 20:11:00.093981     1 MetaClient.cpp:81] root path: /usr/local/nebula, data path size: 1
+W20250830 20:11:00.094211     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:11:00.103652    47 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+I20250830 20:11:01.109652    47 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:11:03.123063     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:11:03.124614     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:11:13.123479     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:11:13.127229    53 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:11:16.147106     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:11:16.147758     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:11:26.149596     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:11:26.153537    54 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:11:29.179590     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:11:29.181336     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:11:39.185334     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:11:39.190337    55 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:11:42.216279     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:11:42.218114     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+I20250830 20:11:45.366390     1 StorageDaemon.cpp:201] Signal 15(Terminated) received, stopping this server
+W20250830 20:11:45.366959     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:11:50.375314    56 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:11:53.390183     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+E20250830 20:11:53.391932     1 MetaClient.cpp:143] Connect to the MetaServer Failed
+E20250830 20:11:53.392467     1 StorageServer.cpp:237] waitForMetadReady error!
+E20250830 20:11:53.392989     1 StorageDaemon.cpp:180] Storage server start failed
+I20250830 20:12:11.874656     1 StorageDaemon.cpp:132] localhost = "storaged":9779
+I20250830 20:12:11.875523     1 StorageDaemon.cpp:147] data path= /data/storage
+I20250830 20:12:11.882000     1 MetaClient.cpp:80] Create meta client to "metad":9559
+I20250830 20:12:11.883170     1 MetaClient.cpp:81] root path: /usr/local/nebula, data path size: 1
+W20250830 20:12:11.883610     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:12:16.897711    47 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:12:19.919538     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:12:19.922102     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:12:29.924052     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:12:29.929322    53 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:12:32.949927     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:12:32.951212     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:12:42.949957     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:12:42.952056    54 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:12:45.971690     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:12:45.973222     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:12:55.975986     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:12:55.979856    55 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:12:59.020184     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:12:59.021781     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:13:09.027608     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:13:09.031349    56 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:13:12.050248     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:13:12.052021     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:13:22.052873     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:13:22.055495    57 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:13:25.082250     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:13:25.084043     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:13:35.085471     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:13:35.089035    58 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:13:38.109369     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:13:38.110682     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:13:48.109467     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:13:48.112730    59 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:13:51.127631     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:13:51.128932     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:14:01.130386     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:14:01.132450    60 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:14:04.148084     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:14:04.150007     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:14:14.243007     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:14:14.246116    61 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:14:17.266516     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:14:17.267562     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:14:27.268700     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:14:27.272843    62 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:14:30.290341     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:14:30.292079     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:14:40.293663     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:14:40.296696    63 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:14:43.314026     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:14:43.315480     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:14:53.317018     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:14:53.320255    64 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:14:56.334925     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:14:56.336511     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:15:06.342736     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:15:06.347498    65 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:15:09.361584     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:15:09.363302     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:15:19.368746     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:15:19.372283    66 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:15:22.391932     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:15:22.392710     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:15:32.398542     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:15:32.403167    67 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:15:35.417135     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:15:35.418110     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+I20250830 20:15:35.644145     1 StorageDaemon.cpp:201] Signal 15(Terminated) received, stopping this server
+W20250830 20:15:35.644461     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:15:38.658139     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+E20250830 20:15:38.659214     1 MetaClient.cpp:143] Connect to the MetaServer Failed
+E20250830 20:15:38.659802     1 StorageServer.cpp:237] waitForMetadReady error!
+E20250830 20:15:38.660269     1 StorageDaemon.cpp:180] Storage server start failed
+I20250830 20:32:36.972595     1 StorageDaemon.cpp:132] localhost = "storaged":9779
+I20250830 20:32:36.974391     1 StorageDaemon.cpp:147] data path= /data/storage
+I20250830 20:32:37.000186     1 MetaClient.cpp:80] Create meta client to "metad":9559
+I20250830 20:32:37.000559     1 MetaClient.cpp:81] root path: /usr/local/nebula, data path size: 1
+W20250830 20:32:37.001134     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:32:37.026921    47 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+I20250830 20:32:38.036489    47 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+I20250830 20:32:39.045333    47 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:32:40.052599     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:32:40.056200     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:32:50.060086     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:32:50.064493    53 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:32:53.083034     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:32:53.083487     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:33:03.085316     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:33:03.089852    54 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:33:06.106287     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:33:06.107877     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:33:16.108829     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:33:16.113003    55 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:33:19.147737     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:33:19.148916     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:33:29.149938     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:33:29.151741    56 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:33:32.165972     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:33:32.167315     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:33:42.169631     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:33:47.183068    57 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:33:50.211494     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:33:50.213287     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:34:00.215505     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:34:00.219229    58 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:34:03.233633     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:34:03.235337     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:34:13.237617     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:34:13.241149    59 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:34:16.255781     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:34:16.256521     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:34:26.258605     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:34:26.260687    60 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:34:29.275417     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:34:29.277091     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:34:39.278620     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:34:39.282411    61 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:34:42.297498     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:34:42.298061     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:34:52.303962     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:34:52.306862    62 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:34:55.325703     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:34:55.327404     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:35:05.329579     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:35:05.334748    63 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:35:08.352406     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:35:08.353529     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:35:18.358091     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:35:18.361086    64 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:35:21.379204     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:35:21.380079     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:35:31.383427     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:35:31.386307    65 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:35:34.400872     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:35:34.402498     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:35:44.404458     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:35:44.406587    66 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:35:47.420459     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:35:47.422583     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:35:57.424337     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:35:57.428927    67 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:36:00.444298     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:36:00.445155     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:36:10.447778     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:36:13.464347     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:36:13.465157     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:36:23.467677     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:36:26.490032     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:36:26.491715     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:36:36.493630     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:36:39.518808     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:36:39.519840     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:36:49.521317     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:36:52.535926     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:36:52.537890     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:37:02.539377     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:37:05.561157     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:37:05.562065     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:37:15.566123     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:37:18.610868     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:37:18.612136     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:37:28.615585     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:37:31.637760     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:37:31.639709     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:37:41.640600     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:37:44.659873     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:37:44.661338     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:37:54.665409     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:37:57.681497     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:37:57.683004     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:38:07.683815     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:38:10.699005     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:38:10.700750     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:38:20.702031     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:38:23.726966     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:38:23.727819     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:38:33.728766     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:38:36.742462     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:38:36.743149     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:38:46.746088     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:38:49.763516     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:38:49.764565     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:38:59.765493     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:39:02.788260     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:39:02.789093     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:39:12.790045     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:39:15.807682     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:39:15.808646     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:39:25.810717     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:39:28.827569     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:39:28.828394     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:39:38.829751     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:39:41.843395     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:39:41.844254     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:39:51.846479     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:39:54.863387     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:39:54.864415     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:40:04.866127     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:40:07.885963     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:40:07.887638     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:40:17.893573     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:40:20.910020     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:40:20.911202     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:40:30.912191     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:40:33.932353     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:40:33.934468     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:40:43.936326     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:40:46.949354     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:40:46.950091     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:40:56.950757     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:40:59.970157     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:40:59.971010     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:41:09.973981     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:41:12.990721     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:41:12.992504     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:41:22.995591     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:41:26.012589     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:41:26.014158     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:41:36.015717     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:41:39.031719     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:41:39.033746     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:41:49.035673     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:41:52.058023     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:41:52.058801     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:42:02.064718     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:42:05.090814     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:42:05.092468     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:42:15.096961     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:42:18.112133     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:42:18.113517     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:42:28.116159     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:42:31.135376     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:42:31.137303     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:42:41.139138     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:42:44.154405     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:42:44.154976     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:42:54.156601     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:42:57.175470     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:42:57.177060     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:43:07.178929     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:43:10.199743     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:43:10.200747     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:43:20.201398     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:43:23.215016     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:43:23.216984     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:43:33.217980     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:43:36.236984     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:43:36.238691     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:43:46.240619     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:43:49.262344     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:43:49.263983     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:43:59.269685     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:44:02.287572     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:44:02.289448     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:44:12.295456     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:44:15.314203     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:44:15.316006     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:44:25.317871     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:44:28.338934     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:44:28.339810     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:44:38.340952     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:44:41.367575     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:44:41.369632     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:44:51.371294     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:44:54.389799     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:44:54.390252     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:45:04.391101     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:45:07.410633     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:45:07.411543     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:45:17.416148     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:45:20.435546     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:45:20.437162     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:45:30.441910     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:45:33.455276     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:45:33.456562     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:45:43.459841     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:45:46.481648     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:45:46.482645     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:45:56.485639     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:45:59.501732     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:45:59.502514     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:46:09.507453     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:46:12.526711     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:46:12.528772     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:46:22.535190     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:46:25.551477     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:46:25.552098     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:46:35.554500     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:46:38.576514     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:46:38.577365     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:46:48.580931     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:46:51.598493     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:46:51.599400     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:47:01.601981     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:47:04.622398     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:47:04.624147     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:47:14.627758     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:47:17.643913     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:47:17.645534     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:47:27.646812     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:47:30.662367     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:47:30.664093     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:47:40.666532     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:47:43.684343     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:47:43.686100     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:47:53.687896     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:47:56.724887     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:47:56.725903     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:48:06.727255     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:48:09.744958     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:48:09.746817     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:48:19.748103     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:48:22.767160     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:48:22.768890     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:48:32.769580     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:48:35.791497     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:48:35.792393     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:48:45.797309     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:48:48.823132     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:48:48.824261     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+I20250830 20:48:54.370597     1 StorageDaemon.cpp:201] Signal 15(Terminated) received, stopping this server
+W20250830 20:48:54.371651     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:48:57.391124     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+E20250830 20:48:57.392154     1 MetaClient.cpp:143] Connect to the MetaServer Failed
+E20250830 20:48:57.392568     1 StorageServer.cpp:237] waitForMetadReady error!
+E20250830 20:48:57.392959     1 StorageDaemon.cpp:180] Storage server start failed
+I20250830 20:49:07.390139     1 StorageDaemon.cpp:132] localhost = "storaged":9779
+I20250830 20:49:07.392499     1 StorageDaemon.cpp:147] data path= /data/storage
+I20250830 20:49:07.406481     1 MetaClient.cpp:80] Create meta client to "metad":9559
+I20250830 20:49:07.408149     1 MetaClient.cpp:81] root path: /usr/local/nebula, data path size: 1
+W20250830 20:49:07.415925     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:49:07.494221    47 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+I20250830 20:49:08.508013    47 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:49:10.527959     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:49:10.530464     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:49:20.533182     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:49:20.537509    53 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:49:23.556157     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:49:23.556875     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:49:33.557778     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:49:33.562860    54 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:49:36.582432     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:49:36.584154     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:49:46.585935     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:49:46.591061    55 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:49:49.628928     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:49:49.630604     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:49:59.633775     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:49:59.636597    56 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:50:02.653800     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:50:02.654990     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:50:12.658987     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:50:12.662923    57 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:50:15.680433     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:50:15.681725     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:50:25.687762     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:50:25.692777    58 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:50:28.713547     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:50:28.714596     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:50:38.715880     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:50:38.719835    59 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:50:41.738207     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:50:41.739374     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:50:51.743902     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:50:51.748055    60 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:50:54.766482     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:50:54.768497     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:51:04.774276     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:51:04.779418    61 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:51:07.797580     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:51:07.799417     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:51:17.799926     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:51:17.804054    62 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:51:20.823279     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:51:20.823896     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:51:30.826531     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:51:30.832218    63 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:51:33.858953     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:51:33.860522     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:51:43.862107     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:51:43.865553    64 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:51:46.886898     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:51:46.888247     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:51:56.892638     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:51:56.898002    65 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:51:59.917016     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:51:59.918980     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:52:09.920513     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:52:09.925330    66 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:52:12.948691     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:52:12.949857     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:52:22.951617     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20250830 20:52:22.954448    67 ThriftClientManager-inl.h:67] resolve "metad":9559 as "172.19.0.2":9559
+E20250830 20:52:25.975662     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:52:25.976950     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:52:35.978502     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:52:39.000072     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:52:39.001752     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:52:49.003571     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:52:52.020773     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:52:52.021553     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:53:02.024140     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:53:05.039831     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:53:05.040891     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:53:15.041834     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:53:18.063105     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:53:18.063870     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:53:28.065825     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:53:31.085736     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:53:31.086473     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:53:41.092444     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:53:44.118512     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:53:44.119481     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:53:54.125622     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:53:57.147490     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:53:57.148308     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:54:07.150329     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:54:10.174005     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:54:10.174477     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:54:20.180588     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:54:23.195539     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:54:23.196766     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:54:33.198124     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:54:36.219745     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:54:36.220460     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20250830 20:54:46.225934     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:54:49.245034     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+I20250830 20:54:49.246179     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+I20250830 20:54:58.683446     1 StorageDaemon.cpp:201] Signal 15(Terminated) received, stopping this server
+W20250830 20:54:58.684598     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+E20250830 20:55:01.703058     1 MetaClient.cpp:112] Heartbeat failed, status:Machine not existed!
+E20250830 20:55:01.704087     1 MetaClient.cpp:143] Connect to the MetaServer Failed
+E20250830 20:55:01.704748     1 StorageServer.cpp:237] waitForMetadReady error!
+E20250830 20:55:01.705291     1 StorageDaemon.cpp:180] Storage server start failed
