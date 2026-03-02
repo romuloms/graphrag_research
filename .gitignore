@@ -2,3 +2,5 @@
 .venv/
 .github/
 .DS_Store
+
+neo4j
