@@ -1,13 +1,20 @@
-version: '3.8'
 services:
-  mongodb:
-    image: mongo:latest
-    container_name: mongodb-local
+  neo4j:
+    image: neo4j:latest
+    container_name: neo4j-projeto
     ports:
-      - "27017:27017"
+      - "7474:7474" # Interface Web (Browser)
+      - "7687:7687" # Protocolo Bolt (Conexão do código)
     volumes:
-      - mongo_data:/data/db
+      - ./neo4j/data:/data
+      - ./neo4j/logs:/logs
+      - ./neo4j/import:/import
+      - ./neo4j/plugins:/plugins
+    environment:
+      # Define a senha inicial (usuário padrão é 'neo4j')
+      - NEO4J_AUTH=neo4j/${NEO4J_PASSWORD}
+      # Habilita o APOC para algoritmos de grafos
+      - NEO4J_PLUGINS=["apoc"]
+      # Permite que o APOC acesse procedimentos de sistema
+      - NEO4J_dbms_security_procedures_unrestricted=apoc.*
     restart: always
-
-volumes:
-  mongo_data:
