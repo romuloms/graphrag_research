@@ -4,51 +4,38 @@ Este projeto segue os princípios da **Onion Architecture**, onde as dependênci
 
 ## 📁 Estrutura de Camadas
 
-### 🔵 Domain (Núcleo)
+### Domain (Núcleo)
 O coração da aplicação, contendo as regras de negócio puras. **Não possui dependências externas**.
 
 - **`entities/`**: Modelos de negócio ricos em comportamento. Classes bem detalhadas, evitando entidades anêmicas.
 - **`exceptions/`**: Exceções de domínio específicas que expressam erros de negócio.
 - **`interfaces/`**: Classes abstratas (ABCs) que definem contratos para repositórios e serviços externos.
 
-### 🟢 Application (Casos de Uso)
+### Application (Casos de Uso)
 Orquestra a lógica de negócio sem conhecer detalhes de infraestrutura.
 
 - **`use_cases/`**: Cada caso de uso representa uma ação específica da aplicação (ex: `CreateUserUseCase`).
 - **`dtos/`**: Data Transfer Objects para entrada e saída de dados. Use Pydantic aqui.
 - **`services/`**: Lógica que envolve múltiplas entidades, mas ainda agnóstica à infraestrutura.
 
-### 🟡 Infrastructure (Detalhes)
+### Infrastructure (Detalhes)
 Implementações concretas que interagem com o mundo externo.
 
 - **`repositories/`**: Implementações das interfaces de repositório definidas no Domain (SQLAlchemy, MongoDB, etc.).
 - **`external_services/`**: Clientes HTTP, integração com APIs externas, envio de e-mails, etc.
 - **`persistence/`**: Configurações de banco de dados, modelos ORM e mappers.
 
-### 🟠 Presentation (Interface)
+### Presentation (Interface)
 Camada de entrada da aplicação.
 
 - **`api/`**: Rotas, controllers e schemas de requisição/resposta (FastAPI, Flask, etc.).
 
 ## 🎯 Regra de Dependência
 
-```
-Presentation → Application → Domain
-     ↓              ↓
-Infrastructure ----↑
-```
-
 - **Domain** não conhece ninguém
 - **Application** conhece apenas Domain
 - **Infrastructure** conhece Domain (implementa suas interfaces)
 - **Presentation** conhece Application e Domain
-
-## 🛠️ Convenções
-
-1. **Use Type Hints**: Todas as funções devem ter tipagem clara.
-2. **Interfaces com ABC**: Use `abc.ABC` e `@abstractmethod` para definir contratos.
-3. **DTOs vs Entidades**: Nunca exponha modelos de banco diretamente. Converta para DTOs ou Entidades.
-4. **Injeção de Dependência**: Use DI para desacoplar implementações de interfaces.
 
 ## 📝 Exemplo de Fluxo
 
