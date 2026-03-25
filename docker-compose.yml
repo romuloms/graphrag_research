@@ -1,20 +1,28 @@
 services:
   neo4j:
-    image: neo4j:latest
+    image: neo4j:5.12.0
     container_name: neo4j-projeto
     ports:
-      - "7474:7474" # Interface Web (Browser)
-      - "7687:7687" # Protocolo Bolt (Conexão do código)
+      - "7474:7474" # Interface Web
+      - "7687:7687" # Protocolo Bolt
     volumes:
       - ./neo4j/data:/data
       - ./neo4j/logs:/logs
       - ./neo4j/import:/import
       - ./neo4j/plugins:/plugins
     environment:
-      # Define a senha inicial (usuário padrão é 'neo4j')
       - NEO4J_AUTH=neo4j/${NEO4J_PASSWORD}
-      # Habilita o APOC para algoritmos de grafos
       - NEO4J_PLUGINS=["apoc"]
-      # Permite que o APOC acesse procedimentos de sistema
       - NEO4J_dbms_security_procedures_unrestricted=apoc.*
+      - NEO4J_dbms_security_procedures_allowlist=apoc.*
+      - NEO4J_server_memory_heap_initial__size=512m
+      - NEO4J_server_memory_heap_max__size=1G
+      # Configurações para o fluxo de ingestão
+      - NEO4J_apoc_import_file_enabled=true
+      - NEO4J_apoc_export_file_enabled=true
+    healthcheck:
+      test: ["CMD-SHELL", "wget --no-verbose --tries=1 --spider localhost:7474 || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
     restart: always
