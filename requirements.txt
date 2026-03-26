@@ -12,6 +12,7 @@ langchain-community==0.4.1
 
 # Utilidades e Configurações
 pydantic==2.12.5
+pydantic-settings==2.13.1
 python-dotenv==1.1.1
 
 # Processamento de Documentos do COPIS
