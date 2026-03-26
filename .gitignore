@@ -2,6 +2,11 @@
 .venv/
 .github/
 .DS_Store
+.vscode/
+
+# Ignorar todos os diretórios __pycache__
+__pycache__/
+**/__pycache__/
 
 neo4j
 
