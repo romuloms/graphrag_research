@@ -1,23 +1,24 @@
 from fastapi import FastAPI
-from src.infrastructure.graph import Neo4jRepository
+from src.application.use_cases import TestGraphConnectionUseCase
+from src.infrastructure.factories import get_test_graph_connection_use_case
 
 
 app = FastAPI(title="GraphRAG API")
 
-graph_repo = Neo4jRepository()
+test_graph_connection_use_case: TestGraphConnectionUseCase = get_test_graph_connection_use_case()
 
 @app.on_event("startup")
 async def startup():
     # Isso ajuda a validar a Tarefa 1.2 automaticamente
     try:
-        await graph_repo.verify_connectivity()
+        await test_graph_connection_use_case.verify_connectivity()
         print("Successfully connected to Neo4j")
     except Exception as e:
         print(f"Failed to connect to Neo4j: {e}")
 
 @app.on_event("shutdown")
 async def shutdown():
-    await graph_repo.close()
+    await test_graph_connection_use_case.close()
 
 @app.get("/health")
 async def health_check():
@@ -29,13 +30,8 @@ async def health_check():
 
 @app.post("/test-graph")
 async def test_graph():
-    test_properties = {
-        "id": "teste-001",
-        "nome": "Nó de Teste STI",
-        "descricao": "Validando a conexão do protótipo"
-    }
     try:
-        await graph_repo.create_node("Teste", test_properties)
+        await test_graph_connection_use_case.create_test_node()
         return {"message": "Nó criado com sucesso no Neo4j!"}
     except Exception as e:
         return {"error": str(e)}
