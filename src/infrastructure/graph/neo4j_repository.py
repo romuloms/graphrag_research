@@ -12,16 +12,24 @@ class Neo4jRepository(IGraphRepository):
       auth=(settings.NEO4J_USER, settings.NEO4J_PASSWORD)
     )
 
+
   async def close(self):
     await self.driver.close()
 
+
   async def create_node(self, label: str, properties: dict):
+    node_id = properties.get("id") if properties is not None else None
+    if not node_id:
+      raise DatabaseOperationError(
+        f"Falha ao criar o nó '{label}' no Neo4j: propriedade 'id' ausente ou inválida."
+      )
     try:
       async with self.driver.session() as session:
         query = f"MERGE (n:{label} {{id: $id}}) SET n += $props RETURN n"
-        await session.run(query, id=properties.get("id"), props=properties)
+        await session.run(query, id=node_id, props=properties)
     except Exception as e:
       raise DatabaseOperationError(f"Falha ao criar o nó '{label}' no Neo4j: {str(e)}") from e
+
 
   async def create_relationship(self, start_node_id: str, end_node_id: str, rel_type: str):
     try:
@@ -31,6 +39,7 @@ class Neo4jRepository(IGraphRepository):
     except Exception as e:
       raise DatabaseOperationError(f"Falha ao criar relacionamento '{rel_type}' no Neo4j: {str(e)}") from e
 
+
   async def execute_query(self, query: str, parameters: dict = None):
     try:
       async with self.driver.session() as session:
@@ -39,6 +48,7 @@ class Neo4jRepository(IGraphRepository):
         return [record.data() async for record in result]
     except Exception as e:
       raise DatabaseOperationError(f"Falha ao executar query customizada no Neo4j: {str(e)}") from e
+
 
   async def verify_connectivity(self):
     await self.driver.verify_connectivity()
