@@ -9,7 +9,6 @@ test_graph_connection_use_case: TestGraphConnectionUseCase = get_test_graph_conn
 
 @app.on_event("startup")
 async def startup():
-    # Isso ajuda a validar a Tarefa 1.2 automaticamente
     try:
         await test_graph_connection_use_case.verify_connectivity()
         print("Successfully connected to Neo4j")
@@ -25,7 +24,7 @@ async def health_check():
     return {
         "status": "online", 
         "project": "Microsserviços + RAG + Knowledge Graph", 
-        "institution": "COPIS/STI/UFS" # 
+        "institution": "COPIS/STI/UFS" 
     }
 
 @app.post("/test-graph")
